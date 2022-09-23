@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32901.215
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PDFtoXLS", "PDFtoXLS\PDFtoXLS.csproj", "{BF0548DE-3A96-4ED9-91FA-AF64D8C63620}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BF0548DE-3A96-4ED9-91FA-AF64D8C63620}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF0548DE-3A96-4ED9-91FA-AF64D8C63620}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF0548DE-3A96-4ED9-91FA-AF64D8C63620}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF0548DE-3A96-4ED9-91FA-AF64D8C63620}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D4D24D0A-D622-4FBE-B68E-ECCCD74C5375}
+	EndGlobalSection
+EndGlobal
