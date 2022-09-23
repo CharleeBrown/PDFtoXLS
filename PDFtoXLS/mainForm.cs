@@ -9,9 +9,9 @@ using Aspose.Cells;
 
 namespace PDFtoXLS
 {
-    public partial class Form1 : Form
+    public partial class mainForm : Form
     {
-        public Form1()
+        public mainForm()
         {
             InitializeComponent();
 
