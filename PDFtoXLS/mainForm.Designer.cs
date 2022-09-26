@@ -37,10 +37,10 @@
             // 
             // excelBtn
             // 
-            this.excelBtn.Location = new System.Drawing.Point(10, 101);
-            this.excelBtn.Margin = new System.Windows.Forms.Padding(2);
+            this.excelBtn.Location = new System.Drawing.Point(64, 104);
+            this.excelBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.excelBtn.Name = "excelBtn";
-            this.excelBtn.Size = new System.Drawing.Size(78, 29);
+            this.excelBtn.Size = new System.Drawing.Size(104, 36);
             this.excelBtn.TabIndex = 0;
             this.excelBtn.Text = "PDF to Excel";
             this.excelBtn.UseVisualStyleBackColor = true;
@@ -48,10 +48,10 @@
             // 
             // pullBtn
             // 
-            this.pullBtn.Location = new System.Drawing.Point(10, 26);
-            this.pullBtn.Margin = new System.Windows.Forms.Padding(2);
+            this.pullBtn.Location = new System.Drawing.Point(64, 12);
+            this.pullBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pullBtn.Name = "pullBtn";
-            this.pullBtn.Size = new System.Drawing.Size(78, 24);
+            this.pullBtn.Size = new System.Drawing.Size(104, 30);
             this.pullBtn.TabIndex = 2;
             this.pullBtn.Text = "Get Files";
             this.pullBtn.UseVisualStyleBackColor = true;
@@ -60,35 +60,36 @@
             // listView1
             // 
             this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(142, 10);
-            this.listView1.Margin = new System.Windows.Forms.Padding(2);
+            this.listView1.Location = new System.Drawing.Point(189, 12);
+            this.listView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(344, 258);
+            this.listView1.Size = new System.Drawing.Size(457, 317);
             this.listView1.TabIndex = 4;
             this.listView1.UseCompatibleStateImageBehavior = false;
             // 
             // defaultNamesCheck
             // 
             this.defaultNamesCheck.AutoSize = true;
-            this.defaultNamesCheck.Location = new System.Drawing.Point(10, 66);
+            this.defaultNamesCheck.Location = new System.Drawing.Point(10, 61);
+            this.defaultNamesCheck.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.defaultNamesCheck.Name = "defaultNamesCheck";
-            this.defaultNamesCheck.Size = new System.Drawing.Size(127, 17);
+            this.defaultNamesCheck.Size = new System.Drawing.Size(158, 20);
             this.defaultNamesCheck.TabIndex = 5;
             this.defaultNamesCheck.Text = "Use default filenames";
             this.defaultNamesCheck.UseVisualStyleBackColor = true;
             // 
             // mainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.ClientSize = new System.Drawing.Size(494, 295);
+            this.ClientSize = new System.Drawing.Size(659, 337);
             this.Controls.Add(this.defaultNamesCheck);
             this.Controls.Add(this.listView1);
             this.Controls.Add(this.pullBtn);
             this.Controls.Add(this.excelBtn);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;
             this.Name = "mainForm";
             this.Text = "PDFtoXLS";
