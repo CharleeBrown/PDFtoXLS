@@ -52,8 +52,29 @@ namespace PDFtoXLS
                     //The textbox for the new filename will give the filename minus the extension type
                     String strs = nfo.Name.Substring(0,nameLength-4);
 
-                    //If the filename is valid
-                    if (InputBox("PDFtoXLS", "Enter new Filename", ref strs) == DialogResult.OK)
+                    // If the Default Filenames checkbox is unchecked. Ask for each filename.
+                    if (defaultNamesCheck.Checked == false)
+                    {
+                        //If the filename is valid
+                        if (InputBox("PDFtoXLS", "Enter new Filename", ref strs) == DialogResult.OK)
+                        {
+                            //The save folder path is saved
+                            string paths = fldr.SelectedPath;
+
+                            //The path is combined and the proper extension added
+                            string newPlace = Path.Combine(paths, strs + ".xlsx");
+
+                            //The PDF is converted and saved under the new extension.
+                            pdfs.Save(newPlace, options);
+
+                            // An instance of the ExcelClear class is created.
+                            ExcelClear clear = new ExcelClear();
+
+                            // The "CleanXls" method is run on the newly saved file.
+                            clear.CleanXls(newPlace);
+                        }
+                    }
+                    else
                     {
                         //The save folder path is saved
                         string paths = fldr.SelectedPath;
@@ -117,7 +138,7 @@ namespace PDFtoXLS
                         }
                         catch (Exception ex)
                         {
-                            MessageBox.Show("Error" + ex.Message);
+                            MessageBox.Show("File Error" + ex.Message);
                         }
                     }
 
