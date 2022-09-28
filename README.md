@@ -1,6 +1,9 @@
 ## PDFtoXLS
-
-[!PDFtoXLS](https://github.com/CharleeBrown/PDFtoXLS/blob/main/PDFtoXLS/PDftoXLS.jpg)
+<img src="https://github.com/CharleeBrown/PDFtoXLS/blob/main/PDFtoXLS/PDftoXLS.jpg"
+     alt="PDFtoXLS"
+     style="height:30; width:30;"/>
+     
+     
 PDFtoXLS is a project i quickly developed for in-house use at my company.
 We have a need for converting PDFs to XLS format, and I couldn't find a suitable boxed product.
 
