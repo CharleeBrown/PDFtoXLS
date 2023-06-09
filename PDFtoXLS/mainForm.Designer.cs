@@ -33,11 +33,12 @@
             this.pullBtn = new System.Windows.Forms.Button();
             this.listView1 = new System.Windows.Forms.ListView();
             this.defaultNamesCheck = new System.Windows.Forms.CheckBox();
+            this.pmiCheck = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // excelBtn
             // 
-            this.excelBtn.Location = new System.Drawing.Point(64, 104);
+            this.excelBtn.Location = new System.Drawing.Point(64, 158);
             this.excelBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.excelBtn.Name = "excelBtn";
             this.excelBtn.Size = new System.Drawing.Size(104, 36);
@@ -71,12 +72,22 @@
             // 
             this.defaultNamesCheck.AutoSize = true;
             this.defaultNamesCheck.Location = new System.Drawing.Point(10, 61);
-            this.defaultNamesCheck.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.defaultNamesCheck.Margin = new System.Windows.Forms.Padding(4);
             this.defaultNamesCheck.Name = "defaultNamesCheck";
             this.defaultNamesCheck.Size = new System.Drawing.Size(158, 20);
             this.defaultNamesCheck.TabIndex = 5;
             this.defaultNamesCheck.Text = "Use default filenames";
             this.defaultNamesCheck.UseVisualStyleBackColor = true;
+            // 
+            // pmiCheck
+            // 
+            this.pmiCheck.AutoSize = true;
+            this.pmiCheck.Location = new System.Drawing.Point(13, 102);
+            this.pmiCheck.Name = "pmiCheck";
+            this.pmiCheck.Size = new System.Drawing.Size(126, 20);
+            this.pmiCheck.TabIndex = 6;
+            this.pmiCheck.Text = "For PMI Reports";
+            this.pmiCheck.UseVisualStyleBackColor = true;
             // 
             // mainForm
             // 
@@ -84,6 +95,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSkyBlue;
             this.ClientSize = new System.Drawing.Size(659, 337);
+            this.Controls.Add(this.pmiCheck);
             this.Controls.Add(this.defaultNamesCheck);
             this.Controls.Add(this.listView1);
             this.Controls.Add(this.pullBtn);
@@ -105,6 +117,7 @@
         private System.Windows.Forms.Button pullBtn;
         private System.Windows.Forms.ListView listView1;
         private System.Windows.Forms.CheckBox defaultNamesCheck;
+        private System.Windows.Forms.CheckBox pmiCheck;
     }
 }
 
