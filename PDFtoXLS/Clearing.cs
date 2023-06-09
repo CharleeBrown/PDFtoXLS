@@ -48,7 +48,7 @@ namespace PDFtoXLS
                     borderRange.Borders[Excel.XlBordersIndex.xlEdgeBottom].LineStyle = Excel.XlLineStyle.xlContinuous;
                     borderRange.Borders[Excel.XlBordersIndex.xlEdgeBottom].Weight = 2d;
 
-                //Setting Range variables for A1 and A2
+                    //Setting Range variables for A1 and A2
                     Excel.Range miscRange = wks.Range["A1", "C1"];
                     Excel.Range sigmaRange = wks.Range["C19"];
                     Excel.Range splitSigmaRange = wks.Range["D19"];
