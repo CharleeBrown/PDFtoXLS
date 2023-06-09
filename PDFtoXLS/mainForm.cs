@@ -12,7 +12,9 @@ namespace PDFtoXLS
 {
     public partial class mainForm : Form
     {
+        //Generating class instances
         PullFiles pullfiles = new PullFiles();
+        FileRead read = new FileRead();
         public mainForm()
         {
             InitializeComponent();
@@ -27,12 +29,13 @@ namespace PDFtoXLS
    
         private void button1_Click(object sender, EventArgs e)
         {
+            // Function from the PullFiles class that takes a ListView and CheckBox as inputs
             pullfiles.ObtainPDF(documentListView, defaultNamesCheck);
             
         }
         private void button2_Click(object sender, EventArgs e)
         {
-            FileRead read = new FileRead();
+           // Function from FileRead that takes a ListView as input
             read.OpenFile(documentListView);
         }
 
