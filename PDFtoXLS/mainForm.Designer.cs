@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(mainForm));
             this.excelBtn = new System.Windows.Forms.Button();
             this.pullBtn = new System.Windows.Forms.Button();
-            this.listView1 = new System.Windows.Forms.ListView();
+            this.documentListView = new System.Windows.Forms.ListView();
             this.defaultNamesCheck = new System.Windows.Forms.CheckBox();
             this.pmiCheck = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
@@ -58,15 +58,15 @@
             this.pullBtn.UseVisualStyleBackColor = true;
             this.pullBtn.Click += new System.EventHandler(this.button2_Click);
             // 
-            // listView1
+            // documentListView
             // 
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(189, 12);
-            this.listView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(457, 317);
-            this.listView1.TabIndex = 4;
-            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.documentListView.HideSelection = false;
+            this.documentListView.Location = new System.Drawing.Point(189, 12);
+            this.documentListView.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.documentListView.Name = "listView1";
+            this.documentListView.Size = new System.Drawing.Size(457, 317);
+            this.documentListView.TabIndex = 4;
+            this.documentListView.UseCompatibleStateImageBehavior = false;
             // 
             // defaultNamesCheck
             // 
@@ -97,7 +97,7 @@
             this.ClientSize = new System.Drawing.Size(659, 337);
             this.Controls.Add(this.pmiCheck);
             this.Controls.Add(this.defaultNamesCheck);
-            this.Controls.Add(this.listView1);
+            this.Controls.Add(this.documentListView);
             this.Controls.Add(this.pullBtn);
             this.Controls.Add(this.excelBtn);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -115,7 +115,7 @@
 
         private System.Windows.Forms.Button excelBtn;
         private System.Windows.Forms.Button pullBtn;
-        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.ListView documentListView;
         private System.Windows.Forms.CheckBox defaultNamesCheck;
         private System.Windows.Forms.CheckBox pmiCheck;
     }
