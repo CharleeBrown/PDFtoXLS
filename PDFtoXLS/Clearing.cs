@@ -49,6 +49,7 @@ namespace PDFtoXLS
                     borderRange.Borders[Excel.XlBordersIndex.xlEdgeBottom].Weight = 2d;
 
                     //Setting Range variables for A1 and A2
+                    // These ranges hold certain symbols and counts from the certificate
                     Excel.Range miscRange = wks.Range["A1", "C1"];
                     Excel.Range sigmaRange = wks.Range["C19"];
                     Excel.Range splitSigmaRange = wks.Range["D19"];
@@ -61,10 +62,10 @@ namespace PDFtoXLS
                     sigmaRange.Clear();
                     sigmaRange.Value = "+/-";
                     
-                    // Setting the symbols at the top of the column
+                    // Generating the character symbols at the top of the column
                     string mainVal = Char.ConvertFromUtf32(0x00B1) + " 2"+ Char.ConvertFromUtf32(0x0073);
 
-                    // Inserting the characters.
+                    // Inserting the characters into the ranges.
                     splitSigmaRange.Value = mainVal;
                     splitSigmaRange.Font.Name = "Symbol";
                    
