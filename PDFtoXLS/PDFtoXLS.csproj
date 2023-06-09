@@ -91,6 +91,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Clearing.cs" />
+    <Compile Include="ExcelClear.cs" />
+    <Compile Include="FileRead.cs" />
     <Compile Include="mainForm.cs">
       <SubType>Form</SubType>
     </Compile>

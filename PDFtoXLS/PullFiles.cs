@@ -21,6 +21,9 @@ namespace PDFtoXLS
             // Instance of FolderBrowser
             FolderBrowserDialog fldr = new FolderBrowserDialog();
 
+            // An instance of the ExcelClear class is created.
+            ExcelClear clear = new ExcelClear();
+
             // Folder Browser description
             fldr.Description = "Choose Folder to Save";
 
@@ -51,24 +54,29 @@ namespace PDFtoXLS
                         //If the filename is valid
                         if (InputBox("PDFtoXLS", "Enter new Filename", ref strs) == DialogResult.OK)
                         {
-                            //The save folder path is saved
-                            string paths = fldr.SelectedPath;
+                            try
+                            {
+                                //The save folder path is saved
+                                string paths = fldr.SelectedPath;
 
-                            //The path is combined and the proper extension added
-                            string newPlace = Path.Combine(paths, strs + ".xlsx");
+                                //The path is combined and the proper extension added
+                                string newPlace = Path.Combine(paths, strs + ".xlsx");
 
-                            //The PDF is converted and saved under the new extension.
-                            pdfs.Save(newPlace, options);
+                                //The PDF is converted and saved under the new extension.
+                                pdfs.Save(newPlace, options);
 
-                            // An instance of the ExcelClear class is created.
-                            ExcelClear clear = new ExcelClear();
-
-                            // The "CleanXls" method is run on the newly saved file.
-                            clear.CleanXls(newPlace);
+                                // The "CleanXls" method is run on the newly saved file.
+                                clear.CleanXls(newPlace);
+                            }
+                            catch(Exception ex)
+                            {
+                                MessageBox.Show("Error: " + ex.Message);
+                            }
                         }
                     }
                     else
                     {
+                        try { 
                         //The save folder path is saved
                         string paths = fldr.SelectedPath;
 
@@ -78,11 +86,17 @@ namespace PDFtoXLS
                         //The PDF is converted and saved under the new extension.
                         pdfs.Save(newPlace, options);
 
-                        // An instance of the ExcelClear class is created.
-                        ExcelClear clear = new ExcelClear();
+     
 
                         // The "CleanXls" method is run on the newly saved file.
                         clear.CleanXls(newPlace);
+                        }
+                        catch(Exception ex)
+                        {
+                            MessageBox.Show("Error" + ex.Message);
+                        }
+
+
                     }
                 }
             }
